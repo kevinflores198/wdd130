@@ -1,6 +1,7 @@
 *{
     margin: 0;
     padding: 0;
+    font-style: italic;
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
 
@@ -15,7 +16,7 @@ main{
     border: 2px solid rgb(27, 27, 16);
     border-radius: 20px;
     padding: 17px;
-    background-color: rgb(60, 60, 35);
+    background-color: rgb(80, 80, 43);
     color: white;
 }
 
