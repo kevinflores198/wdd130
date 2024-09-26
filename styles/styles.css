@@ -1,5 +1,6 @@
 body{
     background-color: rgb(246, 251, 255);
+    font-family: 'Times New Roman', Times, serif;
 }
 
 
@@ -31,6 +32,7 @@ img {
 
 p {
     padding: 0;
+    font-style: italic;
 }
 
 main{
