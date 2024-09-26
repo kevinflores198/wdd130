@@ -1,12 +1,18 @@
+body{
+    background-color: rgb(246, 251, 255);
+}
+
+
 nav {
     background-color: steelblue;
     padding: 10px;
+    text-align: center;
 }
 
 nav a {
     color: white;
     display: block;
-    padding: 20px;
+    padding: 5px;
 }
 
 h1 {
@@ -17,11 +23,39 @@ img {
     width: 150px;
     height: auto;
     border: 1px solid steelblue;
-    padding: 2px;
-    box-shadow: 0 0 30px gray;
+    padding: 0;
+    box-shadow: 0 0 30px rgb(102, 102, 102);
+    border-radius: 5px;
+
 }
 
 p {
-    padding: 10px;
+    padding: 0;
 }
 
+main{
+    max-width: 900px;
+    text-align: center;
+}
+
+aside{
+    width: 16rem;
+    margin: 0;
+    border: 1px solid #9cb9d0;
+    border-radius: 5px;
+    padding: 1rem;
+    background-color: steelblue;
+    color: white;
+    text-align: center;
+}
+
+aside img{
+    width: 200px;
+    height: auto;
+}
+
+footer{
+    margin-top: 50px;
+    border-top: 1px solid steelblue;
+    text-align: center;
+}
