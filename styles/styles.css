@@ -21,14 +21,13 @@ h1 {
     color: steelblue;
 }
 
-img {
-    width: 150px;
+main img {
+    width: 200px;
     height: auto;
     border: 1px solid steelblue;
     padding: 0;
     box-shadow: 0 0 30px rgb(102, 102, 102);
     border-radius: 5px;
-
 }
 
 p {
@@ -55,6 +54,10 @@ aside{
 aside img{
     width: 200px;
     height: auto;
+    border: 1px solid steelblue;
+    padding: 0;
+    box-shadow: 0 0 30px rgb(102, 102, 102);
+    border-radius: 5px;
 }
 
 footer{
