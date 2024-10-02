@@ -1,30 +1,34 @@
-body{
-    background-color: rgb(246, 251, 255);
+:root {
+    --primary-color: steelblue;
+    --secundary-color: rgb(246, 251, 255);
+}
+
+body {
+    background-color: var(--secundary-color);
     font-family: 'Times New Roman', Times, serif;
     font-size: 1.2em;
 }
 
-
 nav {
-    background-color: steelblue;
+    background-color: var(--primary-color);
     padding: 10px;
     text-align: center;
 }
 
 nav a {
-    color: white;
+    color: var(--secundary-color);
     display: block;
     padding: 5px;
 }
 
 h1 {
-    color: steelblue;
+    color: var(--primary-color);
 }
 
 main img {
     width: 200px;
     height: auto;
-    border: 1px solid steelblue;
+    border: 1px solid var(--primary-color);
     padding: 0;
     box-shadow: 0 0 30px rgb(102, 102, 102);
     border-radius: 5px;
@@ -35,33 +39,33 @@ p {
     font-style: italic;
 }
 
-main{
+main {
     max-width: 900px;
     text-align: center;
 }
 
-aside{
+aside {
     width: 16rem;
     margin: 0;
-    border: 1px solid #9cb9d0;
+    border: 1px solid var(--secundary-color);
     border-radius: 5px;
     padding: 1rem;
-    background-color: steelblue;
-    color: white;
+    background-color: var(--primary-color);
+    color: var(--secundary-color);
     text-align: center;
 }
 
-aside img{
+aside img {
     width: 200px;
     height: auto;
-    border: 1px solid steelblue;
+    border: 1px solid var(--primary-color);
     padding: 0;
     box-shadow: 0 0 30px rgb(102, 102, 102);
     border-radius: 5px;
 }
 
-footer{
+footer {
     margin-top: 50px;
-    border-top: 1px solid steelblue;
+    border-top: 1px solid var(--primary-color);
     text-align: center;
 }
