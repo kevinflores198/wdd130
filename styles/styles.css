@@ -7,6 +7,7 @@
 :root {
     --primary-color: steelblue;
     --secundary-color: rgb(246, 251, 255);
+    --shadow: rgb(102, 102, 102);
 }
 
 /* Class Selectors */
@@ -47,7 +48,7 @@ main img {
     height: auto;
     border: 1px solid var(--primary-color);
     padding: 0;
-    box-shadow: 0 0 30px rgb(102, 102, 102);
+    box-shadow: 0 0 30px var(--shadow);
     border-radius: 5px;
     float: right;
     margin-left: 20px;
@@ -81,7 +82,7 @@ aside img {
     height: auto;
     border: 1px solid var(--primary-color);
     padding: 0;
-    box-shadow: 0 0 30px rgb(102, 102, 102);
+    box-shadow: 0 0 30px var(--shadow);
     border-radius: 5px;
 }
 
@@ -93,6 +94,9 @@ aside h2{
 footer {
     margin-top: 50px;
     border-top: 1px solid var(--primary-color);
+}
+
+footer p{
     text-align: center;
 }
 
