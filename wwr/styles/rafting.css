@@ -45,13 +45,11 @@ header .logo a {
     text-decoration: none;
     margin: 40px;
     padding: 20px;
-    transition: 1s;
     border-radius: 10px;
 }
 
-header .logo a:hover {
+.logo a:hover {
     background-color: var(--ascent2-color);
-    transform: 1s;
 }
 
 
@@ -127,18 +125,16 @@ footer {
 	font-style: italic;
 }
 
-footer .social-media{
+.social-media{
     margin: 10px;
 }
 
-footer .social-media .fa-brands{
+i{
     margin: 20px;
     font-size: 1.8em;
     color: var(--ascent2-color);
-    transition: 1s;
 }
 
-footer .social-media .fa-brands:hover{
+i:hover{
     color: var(--primary-color);
-    transform: 1s;
 }
