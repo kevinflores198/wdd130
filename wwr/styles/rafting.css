@@ -103,6 +103,8 @@ main .hero p{
 main .hero h2{
     color: var(--ascent3-color);
     position: absolute;
+    top: -30px;
+    right: 20px;
 }
 
 main .container{
