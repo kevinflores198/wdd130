@@ -1,0 +1,92 @@
+:root {
+    /* Complete palete: https://coolors.co/06070e-29524a-94a187-c5afa0 */
+    /* styles with this palete https://coolors.co/visualizer/06070e-29524a-94a187-e5e3dc-c5afa0 */
+
+    --primary-color: #06070E;
+    --secundary-color: #29524A;
+    --ascent1-color: #94A187;
+    --ascent2-color: #C5AFA0;
+    --ascent3-color: #E5E3DC;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Montserrat", sans-serif;
+    font-size: 1.3em;
+    background-color: var(--ascent3-color);
+}
+
+h1,
+h2 {
+    font-weight: 400;
+}
+
+p {
+    font-family: "Esteban", serif;
+	font-style: italic;
+}
+
+header .logo {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: var(--ascent1-color);
+    padding: 30px;
+}
+
+header .logo a {
+    color: var(--ascent3-color);
+    text-decoration: none;
+    margin: 40px;
+    padding: 20px;
+    transition: 1s;
+    border-radius: 10px;
+}
+
+header .logo a:hover {
+    background-color: var(--secundary-color);
+    transform: 1s;
+}
+
+main .title{
+    text-align: center;
+    margin: 20px;
+}
+
+main img{
+float: left;
+width: 200px;
+margin: 10px;
+border-radius: 15px;
+
+}
+
+main .banner-box, main .product-galery{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+main .banner, main .product{
+    width: 60%;
+    padding: 20px;
+    background-color: var(--ascent2-color);
+    margin: 10px;
+    border-radius: 15px;
+}
+
+footer {
+	text-align: center;
+	width: 100%;
+	bottom: 0;
+	margin-top: 20px;
+	border-top: 1px solid var(--secundary-color);
+	padding: 10px;
+	font-style: italic;
+}
