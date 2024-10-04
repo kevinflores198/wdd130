@@ -128,13 +128,3 @@ footer {
 .social-media{
     margin: 10px;
 }
-
-i{
-    margin: 20px;
-    font-size: 1.8em;
-    color: var(--ascent2-color);
-}
-
-i:hover{
-    color: var(--primary-color);
-}
