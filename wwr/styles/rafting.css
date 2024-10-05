@@ -1,12 +1,12 @@
 :root {
-    /* Complete palete: https://coolors.co/06070e-29524a-94a187-c5afa0 */
+    /* Complete palete: https://coolors.co/042a2b-5eb1bf-54f2f2-9900ff-fcfcfc */
     /* styles with this palete https://coolors.co/visualizer/06070e-29524a-94a187-e5e3dc-c5afa0 */
 
-    --primary-color: #06070E;
-    --secundary-color: #29524A;
-    --ascent1-color: #94A187;
-    --ascent2-color: #C5AFA0;
-    --ascent3-color: #E5E3DC;
+    --primary-color: #042a2b;
+    --secundary-color: #5eb1bf;
+    --ascent1-color: #54f2f2;
+    --ascent2-color: #9900ff;
+    --ascent3-color: #fcfcfc;
 }
 
 * {
@@ -29,19 +29,20 @@ h2 {
 
 p {
     font-family: "Esteban", serif;
-	font-style: italic;
+    font-style: italic;
 }
 
-header .logo {
+/* nav bar */
+.logo {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    background-color: var(--ascent3-color);
+    background-color: var(--secundary-color);
     padding: 30px;
 }
 
-header .logo a {
-    color: var(--secundary-color);
+.logo a {
+    color: var(--ascent3-color);
     text-decoration: none;
     margin: 40px;
     padding: 20px;
@@ -49,82 +50,85 @@ header .logo a {
 }
 
 .logo a:hover {
-    background-color: var(--ascent2-color);
+    background-color: var(--ascent1-color);
+    color: var(--ascent2-color);
 }
 
+/* hero */
 
-main .title{
-    text-align: left;
-    margin-bottom: 10px;
-}
-
-main img{
-float: right;
-width: 400px;
-margin: 10px;
-border-radius: 25px;
-padding: 20px;
-}
-
-main h2{
-    color: var(--primary-color);
-}
-
-main p{
-    font-size: 1.3em;
-    
-}
-
-main .hero{
-    padding: 20px;
-    background: linear-gradient(rgba(5, 7, 12, 0.785), rgba(5, 7, 12, 0.237)),url(images/hero.jpg);
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;
-    background-attachment: fixed;
-    width: 100%;
-    height: 550px;
-    
-}
-
-article{
-    position: absolute;
-    top: 200px;
-	left: 35px;
-}
-
-main .hero p{
-    color: var(--ascent3-color);
-
-}
-
-main .hero h2{
-    color: var(--ascent3-color);
-    position: absolute;
-    top: -30px;
-    right: 20px;
-}
-
-main .container{
+.hero {
     display: flex;
-    align-items: center;
     flex-direction: column;
+    width: 100%;
+    position: relative;
 }
-main .history{
+
+p {
+    font-size: 1.3em;
+}
+
+.hero-back {
+    display: block;
+    width: 100%;
+    height: auto;
+}
+
+.title {
+    color: var(--ascent3-color);
+    position: absolute;
+    width: 100%;
+}
+
+article {
+    position: absolute;
+    background-color: #042a2baa;
+    margin: 60px;
+    border-radius: 20px;
+}
+
+article img {
+    float: right;
+    width: 400px;
+    right: 30px;
+    top: 30px;
+    margin: 30px;
+    border-radius: 20px;
+}
+
+article p {
+    color: var(--ascent3-color);
+    margin: 50px;
+}
+
+/* second page */
+
+.history {
     background-color: var(--ascent1-color);
     padding: 20px;
+    height: auto;
+}
+
+.adventure {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.adventure img {
+    width: 400px;
+    height: auto;
 }
 
 footer {
-	text-align: center;
-	width: 100%;
-	bottom: 0;
-	margin-top: 20px;
-	border-top: 1px solid var(--secundary-color);
-	padding: 10px;
-	font-style: italic;
+    text-align: center;
+    width: 100%;
+    bottom: 0;
+    margin-top: 20px;
+    border-top: 1px solid var(--secundary-color);
+    padding: 10px;
+    font-style: italic;
 }
 
-.social-media{
+.social-media {
     margin: 10px;
 }
