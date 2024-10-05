@@ -58,8 +58,6 @@ p {
 
 .hero {
     display: flex;
-    flex-direction: column;
-    width: 100%;
     position: relative;
 }
 
@@ -131,4 +129,5 @@ footer {
 
 .social-media {
     margin: 10px;
+    text-decoration: none;
 }
