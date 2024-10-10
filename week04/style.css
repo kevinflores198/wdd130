@@ -1,0 +1,27 @@
+.flexbox-container {
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+}
+
+.flexbox-item {
+    background-color: antiquewhite;
+    margin: 10px;
+    border: 2px solid black;
+}
+
+
+.flexbox-item-1 {
+    min-height: 100px;
+}
+
+.flexbox-item-2 {
+    min-height: 200px;
+}
+
+.flexbox-item-3, .flexbox-item-4 {
+    min-height: 300px;   
+}
+
+.flexbox-item-4 {
+    grid-template-columns: repeat(autofill, minmax(150px, 1fr));
+}

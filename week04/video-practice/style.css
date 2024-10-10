@@ -1,0 +1,121 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --title: rgb(35, 35, 46);
+    --coral: coral;
+    --coral-2: rgb(255, 172, 142);
+    --coral-3: rgb(232, 97, 48);
+    --background: rgb(255, 255, 240);
+
+}
+
+body {
+    font-family: "Montserrat", sans-serif;
+    background-color: var(--background);
+}
+
+h1,
+p {
+    color: var(--title);
+    text-align: center;
+    margin: 10px;
+}
+
+p {
+    font-style: italic;
+}
+
+.ex1 {
+    display: grid;
+    place-items: center;
+}
+
+.ex1 .parent {
+    display: grid;
+    place-items: center;
+    width: 200px;
+    height: 200px;
+    color: var(--title);
+    background-color: var(--coral);
+    border-radius: 5px;
+}
+
+.ex2 .parent {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.ex2 .box {
+    background-color: var(--coral);
+    margin: 10px;
+    display: grid;
+    place-items: center;
+    border-radius: 5px;
+    flex: 0 1 200px;
+    height: 200px;
+}
+
+.ex3 .parent {
+    display: grid;
+    height: 400px;
+    grid-template-columns: minmax(150px, 20%) auto;
+}
+
+.ex3 .section-1 {
+    background-color: var(--coral);
+}
+
+.ex3 .section-2 {
+    background-color: var(--coral-2);
+    padding: 15px;
+}
+
+.ex3 .section-2 p{
+    margin: 15px;
+    text-align: start;
+
+}
+
+.ex3 ul{
+    margin: 15px;
+    list-style: none;
+}
+
+.ex3 li{
+    padding: 10px;
+}
+.ex3 a{
+    text-decoration: none;
+    color: var(--title);
+}
+
+.ex4 .parent{
+    display: grid;
+    grid-template-rows: auto 1fr auto;
+}
+
+.ex4 header{
+    padding: 10px;
+    background-color: var(--coral);
+}
+
+.ex4 main{
+    background-color: var(--coral-2);
+    height: 400px;
+    padding: 10px;
+
+}
+
+.ex4 footer{
+    background-color: var(--coral-3);
+    padding: 10px;
+}
+
+.ex4 p{
+    text-align: start;
+}
