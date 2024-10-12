@@ -1,4 +1,4 @@
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -10,15 +10,22 @@
     --shadow: rgb(102, 102, 102);
 }
 
+header,
+.grid,
+footer {
+    max-width: 840px;
+    margin: 0 auto;
+}
+
 /* Class Selectors */
 
-a{
+a {
     color: var(--secundary-color);
     text-decoration: none;
     letter-spacing: 2px;
 }
 
-li{
+li {
     list-style: none;
 }
 
@@ -28,19 +35,38 @@ body {
     font-size: 1.2em;
 }
 
-nav {
+header {
     background-color: var(--primary-color);
-    padding: 10px;
+}
+
+nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    padding: 1rem;
     text-align: center;
 }
 
 nav a {
     display: block;
-    padding: 5px;
+    padding: .5rem;
 }
 
 h1 {
     color: var(--primary-color);
+    border-bottom: 1.5rem;
+}
+
+
+.grid {
+    display: grid;
+    align-items: center;
+}
+
+main {
+    text-align: center;
+    padding: 10px;
+    grid-column: 2/3;
 }
 
 main img {
@@ -55,25 +81,18 @@ main img {
 }
 
 p {
-    padding: 0;
+    padding: .5rem;
     font-style: italic;
     text-align: start;
 }
 
-main {
-    max-width: 900px;
-    text-align: center;
-    padding: 10px;
-}
-
 aside {
-    width: 16rem;
-    margin: 0;
+    grid-column: 1/2;
+    grid-row: 1/2;
+    width: 15rem;
     border: 1px solid var(--secundary-color);
-    padding: 1rem;
     background-color: var(--primary-color);
     color: var(--secundary-color);
-    text-align: center;
     position: relative;
 }
 
@@ -86,7 +105,7 @@ aside img {
     border-radius: 5px;
 }
 
-aside h2{
+aside h2 {
     position: absolute;
     left: 45px;
 }
@@ -96,11 +115,11 @@ footer {
     border-top: 1px solid var(--primary-color);
 }
 
-footer p{
+footer p {
     text-align: center;
 }
 
-.box{
+.box {
     margin: 1rem;
     border: 1px solid var(--secundary-color);
     padding: 1rem;
