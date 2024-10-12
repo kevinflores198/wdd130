@@ -31,7 +31,7 @@ li {
 
 body {
     background-color: var(--secundary-color);
-    font-family: 'Times New Roman', Times, serif;
+    font-family: "Montserrat", sans-serif;
     font-size: 1.2em;
 }
 
@@ -84,7 +84,6 @@ main img {
     box-shadow: 0 0 30px var(--shadow);
     border-radius: 5px;
     float: right;
-    margin-left: 20px;
 }
 
 p {
@@ -114,7 +113,7 @@ aside img {
 
 aside h2 {
     position: absolute;
-    left: 45px;
+    left: 25px;
 }
 
 /* footer */
