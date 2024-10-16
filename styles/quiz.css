@@ -49,6 +49,13 @@ input,textarea,select,button,option{
     border-radius: 7px;
 }
 
+label{
+    color: var(--primary-color);
+    text-align: start;
+    font-style: italic;
+    font-size: 0.8em;
+}
+
 textarea{
     height: 70px;
 
