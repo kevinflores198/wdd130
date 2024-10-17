@@ -5,39 +5,57 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>WWD 130 - HTML form</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="styles/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Esteban&family=Montserrat:ital,wght@0,300;1,300&display=swap"
+        rel="stylesheet">
 </head>
 
 <body>
-    <header>HTML Form - WWD 130</header>
+    <header>
+        <h1>HTML Form - WWD 130</h1>
+    </header>
     <main>
         <form action="form">
             <fieldset>
                 <legend>Contact information</legend>
-                <label for="fullname">Full name: </label>
-                <input type="text" name="fullname" id="fullname">
-                <label for="useremail">Email: </label>
-                <input type="email" name="useremail" id="useremail">
+
+                <div class="form-item column1">
+                    <label for="fullname">Full name </label>
+                    <input type="text" name="fullname" id="fullname">
+                </div>
+                <div class="form-item column1">
+                    <label for="useremail">Email </label>
+                    <input type="email" name="useremail" id="useremail">
+                </div>
             </fieldset>
             <fieldset>
                 <legend>Questions</legend>
-                <label for="answer">What is your favorite browser?"</label>
-                <select name="answer" id="answer">
-                    <option value="browsers" selected disabled>Browsers</option>
-                    <option value="google">Google</option>
-                    <option value="mozilla">Mozilla</option>
-                    <option value="firefox">Firefox</option>
-                </select>
-                <label for="pet">Do you have a household pet?</label>
-                <input type="checkbox" id="pet" name="pet">
-                <label for="places">List the places you have lived:</label>
-                <textarea name="places" id="places"></textarea>
+
+                <div class="form-item column2">
+                    <label for="answer">What is your favorite browser?"</label>
+                    <select name="answer" id="answer">
+                        <option value="browsers" selected disabled>Browsers</option>
+                        <option value="google">Google</option>
+                        <option value="mozilla">Mozilla</option>
+                        <option value="firefox">Firefox</option>
+                    </select>
+                </div>
+                <div class="form-item column2">
+                    <label for="pet">Do you have a household pet?</label>
+                    <input type="checkbox" id="pet" name="pet">
+                </div>
+                <div class="form-item column2">
+                    <label for="places">List the places you have lived:</label>
+                    <textarea name="places" id="places"></textarea>
+                </div>
             </fieldset>
             <button type="submit">Submit poll</button>
         </form>
     </main>
     <footer>
-        ©2024 - HTML form
+        ©2024 - HTML form - Kevin Flores
     </footer>
 </body>
 
