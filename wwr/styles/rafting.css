@@ -37,7 +37,7 @@ header {
     display: grid;
     flex-wrap: wrap;
     grid-template-columns: 15% auto;
-    background-color: var(--secundary-color);
+    background-color: var(--ascent1-color);
 }
 
 header img {
@@ -48,7 +48,7 @@ header img {
 }
 
 header img:hover {
-    background-color: var(--ascent1-color);
+    background-color: var(--secundary-color);
     border-radius: 10px;
 }
 
@@ -68,8 +68,9 @@ header a {
 }
 
 header a:hover {
-    background-color: var(--ascent1-color);
-    color: var(--ascent2-color);
+    background-color: var(--secundary-color);
+    color: var(--ascent3-color);
+    text-decoration: underline;
 }
 
 /* hero */
