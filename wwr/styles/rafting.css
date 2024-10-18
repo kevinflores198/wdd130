@@ -79,10 +79,11 @@ header a:hover {
     position: relative;
 }
 
-.hero h2{
+.hero h2 {
     margin-top: 20px;
     color: var(--ascent3-color);
 }
+
 p {
     font-size: 1.3em;
 }
@@ -112,6 +113,8 @@ article img {
     right: 30px;
     margin: 20px;
     border-radius: 20px;
+    box-shadow: 5px 5px 10px var(--primary-color);
+
 }
 
 article p {
@@ -129,6 +132,21 @@ article p {
     background-color: var(--ascent1-color);
     padding: 20px;
     height: auto;
+}
+
+.history>.container {
+    display: grid;
+    grid-template-columns: auto 1fr auto;
+}
+
+.history>.container p {
+    margin: 10px;
+}
+
+.history img {
+    width: 250px;
+    border-radius: 10px;
+    box-shadow: 5px 5px 10px var(--primary-color);
 }
 
 .adventure {
