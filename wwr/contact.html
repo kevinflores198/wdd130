@@ -29,7 +29,81 @@
     </header>
 
     <main>
+        <div class="location">
+            <div class="info">
+                <h2>Location</h2>
+                <i class="fa-solid fa-location-dot"><a>R. das Gaivotas, 2204 - Praia Ingleses Norte, Florianopolis - SC,
+                        88058-500</a></i>
+                <i class="fa-solid fa-phone"><a>+ 55 48 988 0334 43</a></i>
+                <i class="fa-solid fa-envelope"><a>waterland_2024@gmail.com</a></i>
+            </div>
+            <div class="map">
+                <iframe
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d135170.1704256975!2d-48.449051684482164!3d-27.42013816544224!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95274274d10468c5%3A0x14a97cdf9f4a5ffa!2sPraia%20Ingleses%20Norte!5e1!3m2!1ses-419!2sbr!4v1729300789655!5m2!1ses-419!2sbr"
+                    style="border:0;" allowfullscreen="" loading="lazy"
+                    referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+        </div>
 
+        <div class="employees">
+            <h2>Our team, your help</h2>
+            <div class="container">
+                <figure class="emp">
+                    <img src="images/emp-1.jpg" alt="Employee 1, Mark">
+                    <figcaption>Mark Smith, Raft Manager</figcaption>
+                </figure>
+                <figure class="emp">
+                    <img src="images/emp-2.jpg" alt="Employee 2, Sofy">
+                    <figcaption>Sofy Adams, Raft guide</figcaption>
+                </figure>
+                <figure class="emp">
+                    <img src="images/emp-3.jpg" alt="Employee 3, Bob">
+                    <figcaption>Bob Jhonson, Shuttle Driver</figcaption>
+                </figure>
+                <figure class="emp">
+                    <img src="images/emp-4.jpg" alt="Employee 4, Vanne">
+                    <figcaption>Vannesa Oaks, Office Staff</figcaption>
+                </figure>
+            </div>
+        </div>
+
+        <div class="form">
+            <h2>Contact us!</h2>
+            <form action="form">
+                <fieldset>
+                    <legend>Personal Information</legend>
+                    <div class="form-item column1">
+                        <label for="fullname">Full name: </label>
+                        <input type="text" name="fullname" id="fullname">
+                    </div>
+                    <div class="form-item column1">
+                        <label for="useremail">Email </label>
+                        <input type="email" name="useremail" id="useremail">
+                    </div>
+                </fieldset>
+                <fieldset>
+                    <legend>Purpose of message</legend>
+                    <div class="form-item column2">
+                        <label for="places">General Iniquiry <input type="radio" id="pet" name="pet"></label>
+                        <label for="places">Reservation Question <input type="radio" id="pet" name="pet"></label>
+                        <label for="places">Website Suggestion <input type="radio" id="pet" name="pet"></label>
+                    </div>
+                </fieldset>
+
+                <fieldset>
+                    <legend>Message</legend>
+                    <div class="form-item column2">
+                        <label for="places">Insert a message to us:" </label>
+                        <textarea name="message" id="message"></textarea>
+                    </div>
+                </fieldset>
+
+                <label class="column3" for="places"> <input type="checkbox" id="pet" name="pet">Please subscribe me to the monthly
+                    newsletter</label>
+
+                <button type="submit">Submit request</button>
+            </form>
+        </div>
     </main>
 
     <footer>
@@ -42,6 +116,7 @@
             <a href="https://www.twitch.tv/" target="_blank"><img src="images/twitch.avif" alt="twitch" width="30"></a>
         </div>
     </footer>
+    <script src="https://kit.fontawesome.com/92dadc1c6f.js" crossorigin="anonymous"></script>
 </body>
 
 </html>
