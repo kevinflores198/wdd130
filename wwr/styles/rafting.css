@@ -93,7 +93,6 @@ p {
 .hero-back {
     display: block;
     width: 100%;
-    height: auto;
 }
 
 .title {
@@ -212,8 +211,10 @@ article p {
 }
 
 .employees .container {
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
 }
 
 .employees .container figure {
@@ -222,11 +223,10 @@ article p {
     padding: 10px;
     border-radius: 1rem;
     box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.512);
-
 }
 
 .employees .container img {
-    width: 400px;
+    width: 350px;
     height: auto;
     margin: 10px;
     border-radius: 1rem;
