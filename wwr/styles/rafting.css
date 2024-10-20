@@ -362,7 +362,7 @@ button:hover {
 
 footer {
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr;
     width: 100%;
     bottom: 0;
     padding: 10px;
@@ -375,6 +375,21 @@ footer p {
     justify-content: start;
     align-items: center;
 }
+
+footer a{
+    text-decoration: none;
+    font-weight: bold;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    border-radius: 1rem;
+}
+
+footer a:hover{
+    color: var(--ascent3-color);
+    background-color: var(--ascent2-color);
+}
+
 
 .social-media {
     display: flex;
