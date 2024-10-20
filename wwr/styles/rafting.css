@@ -19,7 +19,11 @@
 body {
     font-family: "Montserrat", sans-serif;
     font-size: 1.3em;
-    background-color: var(--ascent3-color);
+    background-image: url(/wwr/images/back-general.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
 }
 
 h1,
@@ -74,11 +78,17 @@ header a:hover {
     text-decoration: underline;
 }
 
+main {
+    margin: 0 auto;
+    max-width: 1150px;
+}
+
 /* hero */
 
 .hero {
     display: flex;
     position: relative;
+    height: auto;
 }
 
 .hero h2 {
@@ -103,8 +113,8 @@ p {
 
 article {
     position: absolute;
-    background-color: #042a2baa;
-    margin: 60px;
+    background-color: #042a2bd7;
+    margin: 70px;
     border-radius: 20px;
 }
 
@@ -126,31 +136,39 @@ article p {
 /* second page */
 
 .title-container {
-    margin: 20px;
+    padding: 1rem;
+}
+
+main h1{
+    color: var(--primary-color);
+    background-color: var(--ascent3-color);
 }
 
 .history {
     background-color: var(--ascent1-color);
-    padding: 20px;
-    height: auto;
 }
 
 .history>.container {
     display: grid;
-    grid-template-columns: auto 1fr auto;
+    grid-template-columns: repeat(3, auto);
 }
 
 .history>.container p {
-    margin: 10px;
+    margin: 1rem;
 }
 
 .history img {
     width: 250px;
     border-radius: 10px;
+    margin: 1rem;
     box-shadow: 5px 5px 10px var(--primary-color);
 }
 
 .adventure {
+    background-color: var(--ascent3-color);
+}
+
+.adventure .container {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
@@ -186,7 +204,7 @@ article p {
     box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.512);
 }
 
-.location .info i {
+.location .info .fa-solid {
     margin: 15px;
 }
 
@@ -246,6 +264,7 @@ article p {
     justify-content: center;
     flex-direction: column;
     align-items: center;
+    background-color: var(--ascent3-color);
 }
 
 .form h2 {
@@ -270,7 +289,6 @@ form {
 }
 
 .column1 {
-    grid-column: 3fr 1fr;
     margin: .5rem 0;
 }
 
@@ -346,9 +364,8 @@ footer {
     grid-template-columns: 1fr 1fr;
     width: 100%;
     bottom: 0;
-    margin-top: 20px;
-    border-top: 1px solid var(--secundary-color);
     padding: 10px;
+    background-color: var(--ascent1-color);
 }
 
 footer p {
