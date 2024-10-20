@@ -19,7 +19,7 @@
 body {
     font-family: "Montserrat", sans-serif;
     font-size: 1.3em;
-    background-image: url(images/back-general.jpg);
+    background-image: url(/images/back-general.jpg);
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
