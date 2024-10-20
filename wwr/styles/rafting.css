@@ -138,6 +138,7 @@ article p {
 
 main h1 {
     color: var(--ascent3-color);
+    background-color: none;
     margin: 1rem;
 }
 
