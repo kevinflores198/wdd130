@@ -3,7 +3,7 @@
     /* styles with this palete https://coolors.co/visualizer/06070e-29524a-94a187-e5e3dc-c5afa0 */
 
     --primary-color: #990D35;
-    --secundary-color: #FCD581;
+    --secundary-color: #1a0a0f;
     --ascent1-color: #f26454;
     --ascent2-color: #FFF8E8;
     --ascent3-color: #FFFFFF;
@@ -64,7 +64,7 @@ nav {
 }
 
 header a {
-    color: var(--ascent2-color);
+    color: var(--secundary-color);
     text-decoration: none;
     margin: 10px;
     padding: 20px;
@@ -143,7 +143,7 @@ article p {
 
 .history .title-container {
     padding: 1rem;
-    color: var(--ascent3-color);
+    color: var(--secundary-color);
     font-weight: bold;
 }
 
@@ -158,8 +158,7 @@ article p {
 
 .history>.container p {
     margin: 1rem;
-    color: var(--ascent3-color);
-    text-shadow: 0 2px black;
+    color: var(--secundary-color);
 
 }
 
@@ -305,7 +304,7 @@ main h1:hover {
 
 .employees h2 {
     margin: 15px;
-    color: var(--ascent2-color);
+    color: var(--secundary-color);
     font-weight: bold;
 }
 
@@ -396,7 +395,7 @@ input[type="checkbox"] {
 }
 
 button {
-    background-color: var(--secundary-color);
+    background-color: var(--ascent2-color);
     margin: 1rem;
     color: var(--primary-color);
     border-radius: .5rem;
@@ -407,7 +406,7 @@ button {
 }
 
 button:hover {
-    background-color: var(--ascent2-color);
+    background-color: var(--ascent3-color);
     transition: .4s;
 }
 
@@ -418,7 +417,7 @@ footer {
     width: 100%;
     bottom: 0;
     padding: 10px;
-    color: var(--ascent2-color);
+    color: var(--secundary-color);
     background-color: var(--ascent1-color);
 }
 
@@ -436,7 +435,7 @@ footer a {
     display: flex;
     justify-content: center;
     border-radius: 1rem;
-    color: var(--ascent3-color);
+    color: var(--secundary-color);
     padding: 5px;
     transition: .4s;
 
@@ -444,8 +443,8 @@ footer a {
 
 footer a:hover {
     transition: .4s;
-
     background-color: var(--primary-color);
+    color: var(--ascent2-color);
 }
 
 
