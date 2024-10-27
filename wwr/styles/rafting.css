@@ -539,7 +539,7 @@ button {
     place-items: center;
 }
 
-.img-figure{
+.img-figure {
     margin: 1px;
     display: flex;
     align-items: center;
@@ -547,9 +547,9 @@ button {
     flex-direction: column;
 }
 
-.img-figure p{
-width: 90%;
-margin-bottom: 1rem;
+.img-figure p {
+    width: 90%;
+    margin-bottom: 1rem;
 }
 
 .purpose {
@@ -671,6 +671,41 @@ margin-bottom: 1rem;
 .trips-detiled img:hover {
     transition: .5s;
     filter: sepia(1);
+}
+
+table {
+    border-collapse: collapse;
+    border: 2px solid rgb(0, 0, 0);
+    font-family: sans-serif;
+    font-size: 0.8rem;
+    letter-spacing: 1px;
+}
+
+caption {
+    caption-side: bottom;
+    padding: 10px;
+    font-weight: bold;
+    text-align: start;
+    font-size: 1rem;
+}
+
+thead,
+th {
+    background-color: var(--ascent2-color);
+    font-size: 1.5rem;
+}
+
+th,
+td {
+    padding: 8px 10px;
+    padding: 1rem;
+    font-size: 1.5rem;
+    font-style: italic;
+}
+
+td {
+    background-color: var(--ascent3-color);
+    padding: 1rem;
 }
 
 footer {
