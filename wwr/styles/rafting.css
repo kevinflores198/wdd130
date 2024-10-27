@@ -29,6 +29,16 @@ h2 {
     text-align: center;
 }
 
+h2 {
+    font-weight: bold;
+    transition: .5s;
+}
+
+h2:hover {
+    transition: .5s;
+    letter-spacing: 5px;
+}
+
 p {
     font-family: "Esteban", serif;
     font-style: italic;
@@ -141,7 +151,12 @@ article img {
     right: 30px;
     border-radius: 20px;
     box-shadow: 5px 5px 10px black;
+    transition: .5s;
+}
 
+article img:hover {
+    filter: sepia(1);
+    transition: .5s;
 }
 
 article p {
@@ -169,7 +184,6 @@ article p {
 .history>.container p {
     margin: 1rem;
     color: var(--secundary-color);
-
 }
 
 .history img {
@@ -177,6 +191,12 @@ article p {
     border-radius: 10px;
     margin: 1rem;
     box-shadow: 5px 5px 10px var(--primary-color);
+    transition: .5s;
+}
+
+.history img:hover {
+    filter: sepia(1);
+    transition: .5s;
 }
 
 .adventure {
@@ -205,7 +225,8 @@ article p {
 
 .adventure figure:hover {
     background-color: var(--ascent1-color);
-    color: var(--ascent2-color);
+    color: var(--secundary-color);
+
     transition: .5s;
 
 }
@@ -214,6 +235,12 @@ article p {
     width: 300px;
     height: auto;
     border-radius: 10px;
+    transition: .5s;
+}
+
+.adventure img:hover {
+    filter: sepia(1);
+    transition: .5s;
 }
 
 .adventure figcaption {
@@ -259,9 +286,6 @@ main h1:hover {
     letter-spacing: 10px;
 }
 
-.location h2 {
-    font-weight: bold;
-}
 
 .location .map iframe {
     padding: 20px;
@@ -305,6 +329,12 @@ main h1:hover {
     height: auto;
     margin: 10px;
     border-radius: 1rem;
+    transition: .5s;
+}
+
+.employees .container img:hover {
+    filter: sepia(1);
+    transition: .5s;
 }
 
 .employees .container figcaption {
@@ -312,10 +342,9 @@ main h1:hover {
     color: var(--ascent3-color);
 }
 
-.employees h2 {
+.employees h2,
+.form h2 {
     margin: 15px;
-    color: var(--secundary-color);
-    font-weight: bold;
 }
 
 .form {
@@ -324,11 +353,6 @@ main h1:hover {
     flex-direction: column;
     align-items: center;
     background-color: var(--ascent3-color);
-}
-
-.form h2 {
-    margin: 15px;
-    font-weight: bold;
 }
 
 form {
@@ -407,7 +431,7 @@ input[type="checkbox"] {
 button {
     background-color: var(--ascent2-color);
     margin: 1rem;
-    color: var(--primary-color);
+    color: var(--secundary-color);
     border-radius: .5rem;
     padding: 1rem;
     font-size: 1.3rem;
@@ -415,14 +439,14 @@ button {
     transition: .4s;
 }
 
-button:hover {
+.contact button:hover {
     background-color: var(--ascent3-color);
     transition: .4s;
 }
 
 .hero-index h2 {
-    margin-top: 0;
     background-color: var(--ascent1-color);
+    color: var(--secundary-color);
 }
 
 .sign-up {
@@ -440,9 +464,9 @@ button:hover {
 
 .sign-up button {
     background-color: var(--ascent1-color);
-    color: var(--ascent2-color);
-    cursor: pointer;
+    color: var(--secundary-color);
 
+    cursor: pointer;
 }
 
 .sign-up button:hover {
@@ -461,33 +485,13 @@ button:hover {
     position: absolute;
     text-align: center;
     color: var(--ascent2-color);
-    font-weight: bold;
     width: 100%;
     padding: 1rem;
-    text-shadow: 2px 1px black;
     background-color: var(--primary-color);
-    transition: .5s;
-}
-
-.trips h2:hover {
-    transition: .5s;
-    letter-spacing: 5px;
-}
-
-.trips p {
-    width: 100%;
 }
 
 .trips a {
     text-decoration: none;
-    color: var(--primary-color);
-}
-
-.trips a:hover {
-    text-decoration: underline;
-}
-
-.trips button {
     cursor: pointer;
     position: absolute;
     inset: 0;
@@ -495,7 +499,23 @@ button:hover {
     width: 40%;
     height: 20%;
     box-shadow: 5px 10px 10px black;
-    font-size: 1.6rem;
+    font-size: 1.9rem;
+    border-radius: 1.9rem;
+    transition: .5s;
+    background-color: var(--ascent2-color);
+    text-align: center;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    font-weight: bold;
+    color: var(--primary-color);
+}
+
+.trips a:hover {
+    text-decoration: underline;
+    transition: .5s;
+    background-color: var(--ascent3-color);
+    text-decoration: underline;
 }
 
 .trips img {
@@ -510,8 +530,6 @@ button:hover {
 }
 
 .purposes h2 {
-    color: var(--secundary-color);
-    font-weight: bold;
     padding: 1rem;
 }
 
@@ -521,32 +539,138 @@ button:hover {
     place-items: center;
 }
 
+.img-figure{
+    margin: 1px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.img-figure p{
+width: 90%;
+margin-bottom: 1rem;
+}
+
 .purpose {
     background-color: var(--primary-color);
-    width:450px;
+    width: 90%;
     margin: 1rem;
-    border-radius: 0 0 20px 20px;
     box-shadow: 5px 10px 10px black;
+    cursor: pointer;
+    transition: .5s;
+}
 
+.purpose:hover {
+    transition: .5s;
+    background-color: var(--ascent1-color);
 }
 
 .purpose figcaption {
     color: var(--ascent2-color);
     font-size: 1rem;
     margin-left: 1rem;
-
+    padding: .5rem;
 }
 
 .purpose img {
-    width: 450px;
-    height: auto;
-
+    width: 100%;
+    height: 300px;
+    transition: .5s;
 }
 
-.purpose p {
-    color: var(--ascent3-color);
-    margin: 1rem;
+.purpose img:hover {
+    filter: sepia(1);
+    transition: .5s;
+}
 
+.hero-trips {
+    position: relative;
+}
+
+.hero-trips img {
+    display: block;
+    width: 100%;
+    border-radius: 20px 20px 0 0;
+}
+
+.hero-trips a {
+    cursor: pointer;
+    position: absolute;
+    inset: 0;
+    margin: auto;
+    width: 40%;
+    height: 20%;
+    box-shadow: 5px 10px 10px black;
+    font-size: 1.9rem;
+    border-radius: 1.9rem;
+    transition: .5s;
+    background-color: var(--ascent2-color);
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: bold;
+    color: var(--primary-color);
+}
+
+.hero-trips a:hover {
+    transition: .5s;
+    background-color: var(--ascent3-color);
+    text-decoration: underline;
+}
+
+.trips-detiled .container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.trips-detiled h2 {
+    color: var(--secundary-color);
+    padding: 2rem;
+    background-color: var(--ascent1-color);
+    width: 100%;
+    border-radius: 0 0 20px 20px;
+    margin-bottom: 2rem;
+}
+
+.trip-figure {
+    width: 100%;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 2rem;
+}
+
+.trip-figure figcaption {
+    background-color: var(--primary-color);
+    width: 70%;
+    color: var(--ascent2-color);
+    padding: 1rem;
+    border-radius: 0 0 20px 20px;
+    box-shadow: 5px 10px 10px rgba(0, 0, 0, 0.486);
+    text-align: center;
+}
+
+.trip-figure p {
+    padding: 1rem;
+    background-color: var(--ascent2-color);
+    margin-top: 1rem;
+    border-radius: 1rem;
+    width: 90%;
+}
+
+.trips-detiled img {
+    width: 70%;
+    height: 250px;
+    border-radius: 20px 20px 0 0;
+    box-shadow: 5px 10px 10px rgba(0, 0, 0, 0.486);
+    transition: .5s;
+}
+
+.trips-detiled img:hover {
+    transition: .5s;
+    filter: sepia(1);
 }
 
 footer {
