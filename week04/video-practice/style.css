@@ -192,7 +192,7 @@ p {
 
 .ex6 .parent {
     display: grid;
-    grid-template-columns: repeat(12,1fr);
+    grid-template-columns: repeat(12, 1fr);
     width: 60%;
     height: 400px;
     text-align: center;
@@ -228,4 +228,126 @@ p {
     align-items: center;
     display: flex;
     justify-content: center;
+}
+
+.ex7 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.ex7 .parent {
+    width: 60%;
+    height: 400px;
+    text-align: center;
+    display: grid;
+    grid-gap: 1rem;
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+}
+
+.ex7 .span-1 {
+    background-color: var(--coral);
+}
+
+.ex7 .span-2 {
+    background-color: var(--coral-2);
+}
+
+.ex7 .span-3 {
+    background-color: var(--coral-3);
+}
+
+.ex7 .span-4 {
+    background-color: var(--coral-4);
+}
+
+.ex8 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.ex8 .parent {
+    width: 60%;
+    height: auto;
+    text-align: center;
+    display: grid;
+    grid-gap: 1rem;
+    grid-template-columns: repeat(3, 1fr);
+}
+
+.ex8 .card {
+    background-color: var(--coral);
+    height: auto;
+    padding: 1rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.ex8 .card div{
+    background-color: var(--coral-2);
+    width: 100%;
+    height: 150px;
+    padding: 1rem;
+
+}
+
+.ex9 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.ex9 .parent {
+
+    place-items: center;
+    text-align: center;
+    display: grid;
+}
+
+.ex9 .card {
+    background-color: var(--coral);
+    width: clamp(23ch, 50%, 46ch);
+    padding: 1rem;
+    display: flex;
+    flex-direction: column;
+    
+}
+
+.ex9 .card div{
+    background-color: var(--coral-2);
+    width: 100%;
+    height: 150px;
+    padding: 1rem;
+
+}
+
+.ex10 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.ex10 .parent {
+
+    place-items: center;
+    text-align: center;
+    display: grid;
+
+}
+
+.ex10 .card {
+    background-color: var(--coral);
+    padding: 1rem;
+    display: flex;
+    flex-direction: column;
+    
+}
+
+.ex10 .card div{
+    background-color: var(--coral-2);
+    width: 100%;
+    padding: 1rem;
+    aspect-ratio: 4/2;
 }
